@@ -1,0 +1,79 @@
+#*********************************
+#Worlds: specific worlds and 'Broadcast' for all worlds
+#Prefix: can have a random number, use %i to insert it.
+#Interval: time between each message in seconds.
+#Delay: delay before the announcer starts.
+#Random: Random message order.
+#Messages: enclose all messages with ' ' to be safe.
+#*********************************
+Version: 1.05
+
+#CHANGE THE WORLDS YOUR WORLDS
+
+Worlds:
+- Survival_world
+- Creative_world
+- Broadcast
+
+#Messages for world 'Survival_world'
+Survival_world:
+  Prefix: '&f[&6ProTip&f]#&c%i&f: '
+  Interval: 120
+  Delay: 20
+  Random: true
+  Messages:
+  - '&aBuild far away from spawn! Hint: 10mins walk is not far.'
+  - '&aNew? Want a town? get 3 friends to pool their money!'
+  - '&aWant to win some prizes? Type &e''/joinhunt''&a to join the nightly MobHunt.'
+  - '&aWant to save spawners? Use a &esilktouch pickaxe&a to grab them.'
+  - '&aCan''t find your way out of PvE? Type &e''/spawn'''
+  - '&aUse &e''/town list''&a to find an open town and use &e''/town join <townname>''&a
+    to join.'
+  - '&aType &e/buy 7 &ato use &4Red-stone-dust&a to teleport.'
+
+#Messages for world 'Creative_world'
+Creative_world:
+  Prefix: '&f[&cProTip&f]#&c%i&f: '
+  Interval: 120
+  Delay: 20
+  Random: true
+  Messages:
+  - '&aUse &e/plotme&a deny, to remove idiots from your plots.'
+  - '&aUse &e/plotme&a comment, to add comment to people builds.'
+  - '&aUse &e/plotme&a clear to clear your dreddful builds.'
+  - '&aIf you''re not getting promoted, its not you, its your builds.'
+  - '&aSpamming will get you banned, so do us a favour get it over with.'
+  - '&aAsking for rank will get you ranked slower, FACT.'
+  - '&aDidn''t make member rank? It''s probably not your awful build.'
+  - '&aWant day? &e/ptime day &4Boom&a and the night is gone!'
+  
+#Messages for all world; Global Announcements.
+Broadcast:
+  Prefix: '&6[&4Notice&6] '
+  Interval: 200
+  Delay: 20
+  Random: false
+  Messages:
+  - '&4Visit &ehttp://www.domain.com&4 for more info'
+  - '&4Join our mumble server at &edomain.com'
+  - '&4Like us on Facebook! &ehttp://www.facebook.com/ServerName'
+  - '&4Visit&e http://mc.domain.com:8123 &4for dynmap.'
+  - '&4Use &e''/buy''&e or visit &ehttp://store.domain.com/ &4to buy perks.'
+  - '&4Need a admin or mod? Create a request type /modreq'
+  
+Locale:
+  InsufPerms: '&cInsufficient Permissions!'
+  MessagesHeader: '&f[&6id&f]----------------&f[&6Messages&f]----------------'
+  NoAnnouncer: '&cWorld: &f[&6%s&f]&c doesn''t have an Announcer.'
+  WorldNotDefined: '&cWorld: &f[&6%s&f]&c not defined.'
+  NoMessage: '&cMessaged required.'
+  MessageAdded: '&aMessage: %s &a added.'
+  AddUsage: '&c/rt add <world> <message>'
+  MessageRemoved: '&aMessage: %s &aremoved.'
+  MessageInvalide: '&cMessage &f[&6%s&f]&c doesn''t exist.'
+  RemoveUsage: '&c/rt remove <world> <message-id>'
+  AnnouncerStopped: '&aAnnouncer for &f[&6%s&f]&a stopped.'
+  AnnouncerNotRunning: '&cAnnouncer not running.'
+  StopUsage: '&c/RT start <world> - World undefined.'
+  AnnoucerStarted: '&aAnnouncer for &f[&6%s&f]&a started.'
+  AnnouncerRunning: '&cAnnouncer already running.'

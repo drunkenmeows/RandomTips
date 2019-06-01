@@ -1,0 +1,15 @@
+name: RandomTips
+main: me.drunkenmeows.randomtips.RandomTips
+version: '1.06'
+author: drunkenmeows
+softdepend: [Multiverse-Core]
+description: >
+        RandomTip is an announcer, that can announces tips with or without a random number (for fun).
+        RandomTips can broadcast announcements for specific worlds or gloablly for all worlds.
+
+commands:
+   randomtips:
+      description: randomtips
+      permissions: randomtips.admin
+      usage: /<command>
+      aliases: rt
